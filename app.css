@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+  max-width: 700px;
   width: 80%;
   height: 100%;
   margin: 5rem auto 0;
@@ -114,6 +115,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1rem;
 }
 
 .copyright {
@@ -133,4 +135,37 @@ body {
 }
 .attribution a {
   color: var(--primary-blue);
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 90px;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .main-heading-text {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .email-form {
+    text-align: left;
+  }
+
+  .email,
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .email {
+    max-width: 470px;
+    margin-right: 1rem;
+  }
+  .btn {
+    max-width: 200px;
+  }
 }
