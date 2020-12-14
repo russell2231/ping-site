@@ -18,27 +18,22 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
     <link rel="stylesheet" href="app.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
       <img class="logo" src="images/logo.svg" alt="" />
-      <h1 class="showcase">We are launching <span>soon!</span></h1>
-      <p class="showcase-text">Subscribe and get notified</p>
+      <h1 class="main-heading">We are launching <span>soon!</span></h1>
+      <p class="main-heading-text">Subscribe and get notified</p>
 
       <form id="form" class="email-form">
-        <input type="email" name="" id="" />
-        <button type="submit">Notify Me</button>
+        <input
+          class="email"
+          type="email"
+          name=""
+          id=""
+          placeholder="Your email address..."
+        />
+        <button class="btn" type="submit">Notify Me</button>
       </form>
 
       <div class="illustration">
@@ -47,20 +42,20 @@
 
       <footer class="container-footer">
         <div class="socials">
-          <i class="fab fa-facebook-f social"></i>
-          <i class="fab fa-twitter social"></i>
-          <i class="fab fa-instagram social"></i>
+          <a href="#" class="social"><i class="fab fa-facebook-f fa-sm"></i></a>
+          <a href="#" class="social"><i class="fab fa-twitter fa-sm"></i></a>
+          <a href="#" class="social"><i class="fab fa-instagram fa-sm"></i></a>
         </div>
         <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
       </footer>
     </div>
 
-    <footer>
+    <footer class="main-footer">
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Russell Rice</a>.
       </p>
     </footer>
 

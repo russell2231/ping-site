@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --font: 'Libre Franklin', sans-serif;
+  --font-size: 20px;
+  --primary-blue: hsl(223, 87%, 63%);
+  --secondary-blue: hsl(223, 100%, 88%);
+  --secondary-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--font-size);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 5rem auto 0;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.main-heading {
+  color: var(--neutral-gray);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-heading span {
+  color: var(--neutral-blue);
+  font-weight: 700;
+}
+
+.main-heading-text {
+  font-weight: 300;
+  color: var(--neutral-blue);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.email-form {
+  margin-bottom: 4rem;
+}
+
+.email,
+.btn {
+  width: 90%;
+  border-radius: 1.5rem;
+  padding: 0.7rem 2rem;
+  letter-spacing: ;
+}
+
+.email {
+  border: 1px solid var(--secondary-blue);
+  margin-bottom: 0.5rem;
+  color: var(--neutral-blue);
+}
+
+.email::placeholder {
+  color: var(--secondary-blue);
+}
+
+.email:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn {
+  border: 1px solid var(--primary-blue);
+  background-color: var(--primary-blue);
+  color: #fff;
+  box-shadow: 5px 7px 5px rgba(79, 125, 243, 0.1),
+    -5px 7px 5px rgba(79, 125, 243, 0.1);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.dashboard {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.social {
+  display: inline-block;
+  border: 1px solid var(--secondary-blue);
+  margin: 0.3rem;
+  border-radius: 50%;
+  color: var(--primary-blue);
+  height: 35px;
+  width: 35px;
+  position: relative;
+}
+
+.social i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: var(--neutral-gray);
+  font-weight: 300;
+}
+
+.main-footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-blue);
+}
