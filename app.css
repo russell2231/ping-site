@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap');
 
 :root {
   --font: 'Libre Franklin', sans-serif;
@@ -58,18 +58,31 @@ body {
   margin-bottom: 4rem;
 }
 
+.email-form.error .email {
+  border-color: var(--secondary-red);
+}
+
+.error-message {
+  display: block;
+  color: var(--secondary-red);
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
 .email,
 .btn {
   width: 90%;
   border-radius: 1.5rem;
   padding: 0.7rem 2rem;
-  letter-spacing: ;
 }
 
 .email {
   border: 1px solid var(--secondary-blue);
   margin-bottom: 0.5rem;
   color: var(--neutral-blue);
+  font-weight: 300;
 }
 
 .email::placeholder {
@@ -153,6 +166,7 @@ body {
 
   .email-form {
     text-align: left;
+    position: relative;
   }
 
   .email,
@@ -167,5 +181,14 @@ body {
   }
   .btn {
     max-width: 200px;
+  }
+
+  .error-message {
+    position: absolute;
+    left: 35px;
+  }
+
+  .email-form p {
+    text-align: center;
   }
 }
