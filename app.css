@@ -181,6 +181,12 @@ body {
   }
   .btn {
     max-width: 200px;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+  }
+
+  .btn:hover {
+    background-color: hsl(223, 87%, 75%);
+    border-color: hsl(223, 87%, 75%);
   }
 
   .error-message {
